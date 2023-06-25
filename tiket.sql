@@ -76,7 +76,7 @@ CREATE TABLE `password_resets` (
 -- Table structure for table `pelanggan`
 --
 
-CREATE TABLE `pelanggan` (
+CREATE TABLE `pelanggans` (
   `id` int(11) NOT NULL,
   `id_tiket` varchar(255) DEFAULT NULL,
   `nama` varchar(255) DEFAULT NULL,
