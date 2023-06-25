@@ -16,7 +16,7 @@ class PelangganController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $data = Pelanggan::select('*')->orderBy('created_at','DESC');
+            $data = Pelanggan::select('*')->orderBy('id','DESC');
             return DataTables::of($data)
                     ->addIndexColumn()
                     ->addColumn('action', function($row){
@@ -58,8 +58,8 @@ class PelangganController extends Controller
         $pelanggan->update($request->all());
     }
 
-    public function destroy(Pelanggan $pelanggan)
+    public function destroy(User $user)
     {
-        $pelanggan->delete();
+        $user->delete();
     }
 }
