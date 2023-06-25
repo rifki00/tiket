@@ -86,10 +86,10 @@ CREATE TABLE `pelanggans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `pelanggan`
+-- Dumping data for table `pelanggans`
 --
 
-INSERT INTO `pelanggan` (`id`, `id_tiket`, `nama`, `umur`, `no_hp`, `status`) VALUES
+INSERT INTO `pelanggans` (`id`, `id_tiket`, `nama`, `umur`, `no_hp`, `status`) VALUES
 (1, 'K001', 'Rifki', '', '', 'Belum Check IN');
 
 -- --------------------------------------------------------
@@ -141,9 +141,9 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
--- Indexes for table `pelanggan`
+-- Indexes for table `pelanggans`
 --
-ALTER TABLE `pelanggan`
+ALTER TABLE `pelanggans`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -170,9 +170,9 @@ ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `pelanggan`
+-- AUTO_INCREMENT for table `pelanggans`
 --
-ALTER TABLE `pelanggan`
+ALTER TABLE `pelanggans`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
